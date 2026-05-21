@@ -773,4 +773,12 @@ h4 { font-family: var(--font-main); font-size: 18px; font-weight: 700; margin-bo
   .identity-card { padding: 28px 24px; }
   .identity-card-hero { min-height: auto; padding: 34px 26px; }
   .location-card, .location-map, .location-map iframe { min-height: 360px; }
+  
+  /* Make health section stack on mobile */
+  .health-header { grid-template-columns: 1fr; gap: 30px; }
+  .health-video { width: 100%; height: 350px; transform: translateX(0); }
+  
+  /* Fix hero video sizing on mobile */
+  .hero-bg-visual { width: 100vw; height: 50vh; top: auto; bottom: 0; right: 0; opacity: 0.6; }
+  .hero-video { object-position: center bottom; }
 }
